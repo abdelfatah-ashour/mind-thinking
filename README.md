@@ -1,50 +1,47 @@
-# Welcome to your Expo app 👋
+# Mind Thinking App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is a React Native application built with Expo, focusing on task management (Todo list).
 
-## Get started
+## Features
 
-1. Install dependencies
+- **Todo Management:** Add, view, and potentially manage todo items (details inferred from `app/todo-modal.tsx` and `hooks/use-todos.ts`).
+- **Navigation:** Uses Expo Router for file-based routing.
+- **Styling:** Styled using Tailwind CSS via NativeWind.
 
-   ```bash
-   npm install
-   ```
+## Tech Stack
 
-2. Start the app
+- **Framework:** [React Native](https://reactnative.dev/) with [Expo](https://expo.dev/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Routing:** [Expo Router](https://docs.expo.dev/router/introduction/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/) with [NativeWind](https://www.nativewind.dev/)
+- **State Management:** Custom React Hooks (`hooks/use-todos.ts`)
+- **Utilities:** Custom utility functions for date formatting and ID generation.
 
-   ```bash
+## Getting Started
+
+1.  **Install Dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+2.  **Run the App:**
+    ```bash
     npx expo start
-   ```
+    ```
 
-In the output, you'll find options to open the app in a
+## Project Structure (Overview)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- `app/`: Contains screen components and routing logic (Expo Router).
+- `assets/`: Static assets like fonts and images.
+- `components/`: Reusable UI components.
+- `constants/`: Shared constants like color definitions.
+- `hooks/`: Custom React hooks for logic and state management.
+- `utils/`: Utility functions.
+- `*.config.js`: Configuration files for Expo, Babel, Metro, Tailwind CSS, etc.
+- `tsconfig.json`: TypeScript configuration.
+- `package.json`: Project dependencies and scripts.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+_This README was initially generated based on the project structure._
